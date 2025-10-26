@@ -4,7 +4,6 @@ import * as assert from "node:assert/strict";
 import * as parser from "../src/parser";
 import * as tokenizer from "../src/tokenizer";
 
-
 function getMethod(methodString: string): parser.Method | undefined {
 	const d = parser.parseText(methodString);
 	return d.methods[0];

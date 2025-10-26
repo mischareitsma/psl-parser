@@ -1,5 +1,6 @@
+import * as path from "node:path";
+
 import * as fs from "fs-extra";
-import * as path from "path";
 
 type ConfigBaseDir = string;
 
