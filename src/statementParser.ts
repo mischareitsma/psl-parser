@@ -4,7 +4,7 @@ Notes from Mischa Reitsma on skipped rules:
 - The no case declarations rule can be fixed by making sure the code in the cases go to dedicated
   functions. It would make the code way more maintainable and readable.
 */
-import {getTokens, Token, Type} from "./tokenizer";
+import {getTokens, Token, Type} from "./tokenizer.ts";
 
 export enum SyntaxKind {
 	ASSIGNMENT,

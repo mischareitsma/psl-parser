@@ -1,7 +1,8 @@
 import * as fs from "node:fs";
-import { Statement, StatementParser } from "./statementParser";
-import { getTokens, Token, Type } from "./tokenizer";
-import { getLineAfter } from "./utilities";
+
+import { Statement, StatementParser } from "./statementParser.ts";
+import { getTokens, Token, Type } from "./tokenizer.ts";
+import { getLineAfter } from "./utilities.ts";
 
 /**
  * Used for checking the type of Member at runtime

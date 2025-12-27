@@ -1,4 +1,7 @@
-# PSL Parser Build Information
+# DEPRECATED!!! PSL Parser Build Information
+
+As the title suggest, this document is deprecated and requires an update. Some
+section might still be relevant for the future.
 
 This document discussed the various files and steps that are used to build this
 project

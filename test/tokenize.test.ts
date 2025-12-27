@@ -348,7 +348,7 @@ test("string", () => {
 
 test("carriage return line feed", () => {
 	const tokenizer = getTokens("\r\n");
-	const tokens = [];
+	const tokens: Token[] = [];
 	for (const token of tokenizer) {
 		tokens.push(token);
 	}
@@ -358,7 +358,7 @@ test("carriage return line feed", () => {
 
 test("comment newline", () => {
 	const tokenizer = getTokens("// this is a psl comment\n");
-	const tokens = [];
+	const tokens: Token[] = [];
 	for (const token of tokenizer) {
 		tokens.push(token);
 	}
@@ -370,7 +370,7 @@ test("comment newline", () => {
 
 test("comment with semicolon", () => {
 	const tokenizer = getTokens("; this is a mumps comment\n");
-	const tokens = [];
+	const tokens: Token[] = [];
 	for (const token of tokenizer) {
 		tokens.push(token);
 	}

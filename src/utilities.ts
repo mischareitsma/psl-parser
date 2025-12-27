@@ -1,10 +1,12 @@
-import * as fs from "fs";
+import * as fs from "node:fs";
+import * as path from "node:path";
+
 import * as fsx from "fs-extra";
 import * as jsonc from "jsonc-parser";
-import * as path from "path";
-import { FinderPaths } from "./config";
-import { Member, MemberClass, Method, ParsedDocument, parseText, Property } from "./parser";
-import { Position, Token, Type } from "./tokenizer";
+
+import { FinderPaths } from "./config.ts";
+import { Member, MemberClass, Method, ParsedDocument, parseText, Property } from "./parser.ts";
+import { Position, Token, Type } from "./tokenizer.ts";
 
 export interface FinderResult {
 	fsPath: string;
